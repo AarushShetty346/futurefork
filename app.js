@@ -1,6 +1,8 @@
 const { useState, useEffect, useRef } = React;
 
-const API_KEY  = 'REMOVED_FINNHUB_KEY';
+// The key comes from config.js, which is not committed. See config.example.js.
+const API_KEY  = (window.FUTUREFORK_CONFIG || {}).FINNHUB_API_KEY || '';
+if (!API_KEY) console.error('No Finnhub API key found. Copy config.example.js to config.js and add your key.');
 const BASE     = 'https://finnhub.io/api/v1';
 const INR_RATE = 92;
 

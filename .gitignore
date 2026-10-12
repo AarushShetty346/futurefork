@@ -1,0 +1,11 @@
+# Local API key (see config.example.js)
+config.js
+.env
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+node_modules/
