@@ -24,8 +24,16 @@ The project was developed as part of my Web Programming coursework at VIT Vellor
 ## Running the project
 
 1. Clone the repository.
-2. Replace the placeholder Finnhub API key in `app.js` with your own key.
-3. Open `index.html` in your browser.
+2. Copy `config.example.js` to `config.js` and put your own [Finnhub](https://finnhub.io/register) API key in it. `config.js` is ignored by git.
+3. Serve the folder and open it in your browser:
+
+   ```bash
+   python -m http.server 8000
+   ```
+
+   Then go to http://localhost:8000.
+
+The app runs entirely in the browser, so the key in `config.js` is visible to anyone who can load the page. Use a free key and don't host the page publicly with a key you care about.
 
 ## Notes
 
